@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tasks page</title>
+</head>
+<body>
+    <h1>Tasks</h1>
+    <div th:each="task : ${tasks}">
+        <h3 th:text="|Name: ${task.getName()}|"></h3>
+        <p th:text="|Description: ${task.getDescription()}|"></p>
+    </div>
+</body>
+</html>

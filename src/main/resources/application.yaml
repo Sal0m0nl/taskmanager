@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: taskmanager
+  security:
+    user:
+      password: password
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/users_tasks_db
+    password: root
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
