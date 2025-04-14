@@ -135,6 +135,14 @@ public class MainPagesController {
 
         dbUserService.save(user);
 
+        Task task = new Task();
+
+        task.setName("Make Bed");
+        task.setDescription("You need to make your bed");
+        task.setOwnerId(user.getId());
+
+        dbTaskService.save(task);
+
         return "redirect:/tasks";
 
     }
